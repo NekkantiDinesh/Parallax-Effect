@@ -1,0 +1,174 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    perspective: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.snowbackground {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* z-index: -1; */
+    position: -10px;
+    transform: translateZ(-10px) scale(2.5);
+    z-index: 5;
+}
+
+.snow {
+    display: flex;
+    position: absolute;
+    transform: translateZ(-7px) scale(1.5);
+}
+
+.snow1 {
+    overflow-x: hidden;
+    display: flex;
+    position: absolute;
+    position: inherit;
+    opacity: 0.8;
+    z-index: 5;
+}
+
+.havefun {
+    font-size: 3rem;
+}
+
+.red {
+    color: rgb(255, 128, 0);
+}
+
+.blue {
+    color: rgb(0, 208, 255);
+}
+
+.green {
+    color: rgb(30, 255, 0);
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17%;
+    position: absolute;
+    transform: translateZ(8px) scale(1);
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.paralla {
+    animation: paralla 5s infinite;
+}
+
+@keyframes paralla {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+
+    50% {
+        color: rgb(4, 226, 255);
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.love {
+    color: rgb(238, 51, 138);
+}
+
+.tothe,
+.parallaxworld {
+    margin-top: -20px;
+}
+
+section {
+    position: absolute;
+    background-color: white;
+    color: black;
+}
+
+.snowborder {
+    margin-top: -22%;
+    scale: 1.2;
+    position: relative;
+    animation: snow 20s infinite 5s;
+}
+
+@keyframes snow {
+    from {
+        right: 0px;
+    }
+
+    50% {
+        right: 400px;
+    }
+
+    to {
+        right: 0px;
+    }
+
+}
+
+.para {
+    margin-top: -15%;
+    font-size: 10rem;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.245);
+}
+
+.text {
+    font-size: 1.5rem;
+    margin: 20px;
+    margin-right: 250px;
+    text-align: justify;
+}
+
+.p1 {
+    margin-top: -5%;
+    animation: p1 10s infinite;
+}
+
+@keyframes p1 {
+    from {
+        color: rgb(255, 0, 221);
+    }
+
+    50% {
+        color: rgb(7, 147, 147);
+    }
+
+    to {
+        color: rgb(255, 153, 0);
+    }
+
+}
+
+.end {
+    font-size: 20rem;
+    text-align: center;
+    animation: end 2s infinite 20s;
+}
+
+@keyframes end {
+    0%{font-family: 'Courier New', Courier, monospace; color: aqua;}
+    50%{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: blueviolet;}
+    100%{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+}
